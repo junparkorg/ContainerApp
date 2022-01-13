@@ -29,7 +29,8 @@ jobs:
     deploy-to-aks:      
       runs-on: ubuntu-latest      
       if: github.ref == 'refs/heads/master'
-      needs: build-deploy-image          
+      needs: build-deploy-image
+      environment: STAGING
       #env:
         #NAMESPACE: dummy      
       steps:      
