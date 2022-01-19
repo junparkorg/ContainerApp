@@ -1,6 +1,6 @@
 ﻿@page
 @using ContainerApp.Model
-@model Todo
+@model IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
@@ -10,7 +10,7 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">Deployed from Github</a>.</p>
 </div>
 <div>
-    <p>id: @Model.id</p>
-    <p>title: @Model.title</p>
-    <p>user id: @Model.userId</p>
+    <p>id: @Model.Todo.id</p>
+    <p>title: @Model.Todo.title</p>
+    <p>user id: @Model.Todo.userId</p>
 </div>
