@@ -52,7 +52,7 @@ jobs:
       #    kubectl create namespace ${{ env.NAMESPACE }} --dry-run -o json | kubectl apply -f -
     
       # Create image pull secret for ACR
-      - uses: azure/k8s-create-secret@v1
+      - uses: azure/k8s-create-secret@v2
         with:
           container-registry-url: ${{ env.ACR_LOGON_SERVER }}
           container-registry-username: ${{ secrets.SERVICE_PRINCIPAL_ID }}
