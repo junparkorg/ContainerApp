@@ -41,7 +41,7 @@ jobs:
       steps:      
       - uses: actions/checkout@main      
       # Set the target Azure Kubernetes Service (AKS) cluster. 
-      - uses: azure/aks-set-context@v2.0
+      - uses: azure/aks-set-context@v3.0
         with:
           creds: '${{ secrets.AZURE_CREDENTIALS }}'
           cluster-name: ${{ secrets.AKS_NAME }}
