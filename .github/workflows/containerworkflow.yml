@@ -61,7 +61,7 @@ jobs:
           # namespace: ${{ env.NAMESPACE }}
     
       # Deploy app to AKS
-      - uses: azure/k8s-deploy@v3.0
+      - uses: azure/k8s-deploy@v4.5
         with:
           manifests: |
             manifests/deployment.yml
