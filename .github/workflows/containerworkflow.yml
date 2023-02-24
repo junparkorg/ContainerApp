@@ -39,7 +39,7 @@ jobs:
       #env:
         #NAMESPACE: dummy      
       steps:      
-      - uses: actions/checkout@main      
+      - uses: actions/checkout@master      
       # Set the target Azure Kubernetes Service (AKS) cluster. 
       - uses: azure/aks-set-context@v2.0
         with:
