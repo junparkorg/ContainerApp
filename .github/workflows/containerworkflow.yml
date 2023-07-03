@@ -16,7 +16,7 @@ jobs:
           uses: actions/checkout@master
         
         - name: ZAP Scan
-          uses: zaproxy/action-baseline@v0.6.1
+          uses: zaproxy/action-baseline@v0.8.1
           with:
             target: 'https://appservicekorea.azurewebsites.net/'
 
